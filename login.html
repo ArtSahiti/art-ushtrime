@@ -1,4 +1,7 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
+
+<html>
+
 <head>
 <title>LOGIN</title>
 <link rel="stylesheet" href="style2.css">
@@ -6,20 +9,60 @@
 </head>
 <body>
 <center><div class="container">
+    <input type="button" value="Klikoni ketu per te pare sa eshte ora" id="ora" onclick="ORA()">
 <center><h1>Log In</h1></center><br><br>
 <center><form>
 <h3>EMRI</h3>
-<input type="text" id="name" name="EMRI">
-<label for="name"></label><br><BR>
-<h3>MBIEMRI</h3>
-<input type="text" id="mbiemri" name="Mbiemri">
-<label for="mbiemri"></label><br><br><br>
+<label style="color: red; font-size: 20px; opacity: 0;" id="labelUsername">Username</label><br><br>
+<input type="text" id="username"><br>
 
-<center><button>SUBMIT</button></center>
+<h3>PASSWORD</h3><br>
+
+<label style="color: red; font-size: 20px; opacity: 0;" id="labelPassword">Password</label><br><br>
+<input type="password" id="password"><br><br>
+
+<input type="button" value="Submit" id="submit" onclick="changeart()">
 
 </form></center>
 
 </div></center>
+<script>
+function changeart(){
+var username=document.getElementById('username');
+var password=document.getElementById('password');
+
+var element1=document.getElementById('labelUsername');
+var element2=document.getElementById('labelPassword');
+
+
+if(username.value =="" && password.value==""){
+
+element1.style.opacity=100;
+element2.style.opacity=100;
+
+
+}
+
+else if(username.value==""){
+    element1.style.opacity=100;
+}
+
+else if(password.value==""){
+    element2.style.opacity=100;
+}
+
+}
+
+function ORA(){
+
+    var data=new Date();
+
+alert("Ora eshte : "+data.getHours()+":"+data.getMinutes())
+
+
+
+
+}
 
 
 
@@ -41,9 +84,20 @@
 
 
 
+
+
+
+
+
+
+
+    
+</script>
+<script src="scrips.js"></script>
 
 </body>
 
 
 
 
+</html>
