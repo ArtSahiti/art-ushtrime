@@ -1,0 +1,79 @@
+body{
+background-image: url(foto5.jpg);
+background-size: 100%;
+
+}
+.register{
+    width: 700px;
+    height: 1000px;
+    border: 2px solid black;
+    box-shadow: -16px 12px 129px 47px #0f0cd4e0;
+-webkit-box-shadow: -16px 12px 129px 47px rgba(15,12,212,0.88);
+-moz-box-shadow: -16px 12px 129px 47px rgba(15,12,212,0.88);
+border-radius: 10px;
+
+}
+.register input {
+
+
+}
+#company{
+    width: 10.2cm;
+    height: 1cm;
+    margin-left: -0.3cm;
+    
+}
+#company text{
+    margin-left: -1cm;
+}
+#emri{
+    width: 5cm;
+    height: 0.8cm;
+    border-style: inherit;
+}
+#mbiemri{
+    width: 5cm;
+    height: 0.8cm;
+    border-style: inherit;
+
+}
+#email{
+    width: 10.2cm;
+    height: 1cm;
+  
+
+}
+#phone{
+    width: 10.2cm;
+    height: 1cm;
+
+}
+h1{
+    margin-bottom: 1cm;
+}
+
+#submit{
+    border-radius: 10px;
+    color: blue;
+    height: 0.8cm;
+    width: 2.8cm;
+    background-color: white;
+}
+#submit:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.register input{
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
